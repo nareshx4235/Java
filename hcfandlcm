@@ -38,6 +38,8 @@ public static void main(String[] args) {
 	int x=a,y=b,lcm=1;
 	while(a%b!=0) {
 		a=a%b;
+		
+		//swaping values
 		a=a+b;
 		b=a-b;
 		a=a-b;
