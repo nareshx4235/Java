@@ -22,3 +22,35 @@ public static void main(String[] args) {
 	
 }
 }
+
+@
+Another method:
+
+package com.studystd.loops;
+import java.util.Scanner;
+
+public class lcmandhcf {
+public static void main(String[] args) {
+	System.out.println("Enter Two number:");
+	Scanner sc = new Scanner (System.in);
+	int a =sc.nextInt ();
+	int b= sc.nextInt ();
+	int x=a,y=b,lcm=1;
+	while(a%b!=0) {
+		a=a%b;
+		a=a+b;
+		b=a-b;
+		a=a-b;
+	}
+	System.out.println("Hcf :"+b);
+	
+	lcm=x*y/b;
+	System.out.println("LCM :"+lcm);
+	
+	
+	
+	
+	
+}
+}
+
