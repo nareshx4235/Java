@@ -1,0 +1,24 @@
+package com.studystd.loops;
+import java.util.Scanner;
+
+public class lcmandhcf {
+public static void main(String[] args) {
+	System.out.println("Enter Two number:");
+	Scanner sc = new Scanner (System.in);
+	int num1 = sc.nextInt ();
+	int num2 = sc.nextInt ();
+	int HCF=1;
+	int min =(num1>num2)?num2:num1; //num1 may be large and num2 may be small .so we use ternary opertaor
+	for(int i =1;i<=num1;i++)
+	{
+		if(num1%i==0 && num2%i==0)
+			HCF=i;
+		
+	}
+	System.out.println("HCF IS:"+HCF);
+	int LCM =1;
+	LCM = (num1*num2)/HCF;
+	System.out.println("LCM IS:"+LCM);
+	
+}
+}
