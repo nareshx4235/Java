@@ -1,0 +1,54 @@
+//inheritance 
+
+
+package oops.Polmorphism;
+
+class Shape{         //base class
+	public void area(){
+		System.out.println("Displays area:");
+		
+		
+	}
+}
+class Triangle extends Shape {          //single inheritance
+	 public void area(int  l, int h) {
+		 System.out.println(0.5*l*h);
+		 
+	 
+	 System.out.println("This is a Single inheritance");
+	
+}
+}
+
+
+class Circle extends Shape      //Hierarchical Inheritance
+{       
+	public void area(int r) {
+		System.out.println((3.14)*r*r);
+		 System.out.println("this is a Hierarchical Inheritance");
+	}
+}
+
+class EquilateralTriangle extends Triangle   //Multi level Inheritance
+{ 
+	public void area (int l) {
+		System.out.println((Math.sqrt(3) / 4)*l*l);
+		 System.out.println("This is a Multi level inheritance");
+}
+}
+
+public class Inheritance {
+
+	public static void main(String[] args) {
+		Triangle triangle = new Triangle ();
+		triangle.area(5,10);
+		Circle c= new Circle();
+		c.area(7);
+		
+		EquilateralTriangle eqTriangle = new EquilateralTriangle();
+        eqTriangle.area(4);
+        
+		
+		
+	}
+}
