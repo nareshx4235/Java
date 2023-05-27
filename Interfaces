@@ -1,0 +1,20 @@
+package oops;
+interface Animal{
+	public void walk();   //abstract function
+}
+class Horse implements Animal{     //horse use animal function
+	public void walk() {
+	
+	System.out.println("walks on 4 legs");
+	
+}
+}
+
+
+public class OOPS {
+	public static void main(String args[]) {
+		Horse horse = new Horse();
+		horse.walk();
+	}
+
+}
